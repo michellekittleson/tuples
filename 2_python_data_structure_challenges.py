@@ -9,10 +9,23 @@ Add functionality to insert new books into 'library'. Ensure that adding a dupli
 
 '''
 
+def insert_book(title, author):
+    title = input("Enter the title of the book: ")
+    author = input("Enter the author of the book: ")
+
 library = [
     ("1984", "George Orwell"),
-    ("Brave New World", "Aldous Huxley")
+    ("Brave New WOrld", "Aldous Huxley")
 ]
 
-def new_book():
-    pass
+def main():
+    while True:
+        print("\n1. Insert new book")
+        print("2. Exit")
+        choice = input("Enter your choice: ")
+
+        if choice == '1':
+            insert_book(title, author)
+        elif choice == '2':
+            print("Exiting program.")
+            break
