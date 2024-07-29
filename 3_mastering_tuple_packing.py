@@ -13,8 +13,8 @@ orders = [
     # More orders...
 ]
 
-customer, item, quantity = orders
+
 for order in orders:
+    customer, item, quantity = order
     print(f"Customer name: {customer}, Item Ordered: {item}, Quantity: {quantity}")
 
-# Again, getting a ValueError here

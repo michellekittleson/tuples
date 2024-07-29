@@ -16,12 +16,9 @@ itineraries = [
 ]
 
 def formatted_itineraries(itineraries):
-    for itinerary in itineraries:
-        traveler, origin, destination = itineraries
-        print(f"Itinerary: {traveler} - From {origin} to {destination}")
+    for index, itinerary in enumerate(itineraries):
+        traveler, origin, destination = itinerary
+        print(f"Itinerary {index + 1}: {traveler} - From {origin} to {destination}")
 
 formatted_itineraries(itineraries)
 
-# Getting ValueError: not enough values to unpack (expected 3, got 2)
-
-# How do I access the index + 1 to print "Itinerary 1" for example?
